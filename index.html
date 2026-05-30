@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HERRY WATCH | L'Excellence au Poignet | Haute Horlogerie Maroc</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">HERRY</div>
+            <div class="loader-sub">WATCH</div>
+            <div class="gold-line"></div>
+        </div>
+    </div>
+
+    <header class="luxury-header">
+        <div class="header-container">
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active">Accueil</a>
+                <a href="#collections" class="nav-link" data-filter="montres">Montres</a>
+                <a href="#collections" class="nav-link" data-filter="bracelets">Bracelets</a>
+                <a href="#collections" class="nav-link" data-filter="colliers">Colliers</a>
+                <a href="#nouveautes" class="nav-link">Nouveautés</a>
+                <a href="#about" class="nav-link">À Propos</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-logo">
+                <a href="#hero">HERRY<span class="gold-dot">.</span></a>
+            </div>
+
+            <div class="header-actions">
+                <div class="search-wrapper">
+                    <i class="fa-solid fa-magnifying-glass action-icon" id="search-btn"></i>
+                    <input type="text" id="search-input" placeholder="Rechercher une pièce...">
+                </div>
+                <i class="fa-regular fa-heart action-icon" id="wishlist-btn"></i>
+                <div class="cart-icon-wrapper" id="cart-toggle-btn">
+                    <i class="fa-solid fa-bag-shopping action-icon"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle animate-fade">Haute Horlogerie Marocaine</p>
+            <h1 class="hero-title animate-fade">L'Excellence au Poignet</h1>
+            <p class="hero-description animate-fade">Découvrez des montres et accessoires premium conçus pour sublimer votre élégance.</p>
+            <div class="hero-buttons animate-fade">
+                <a href="#bestsellers" class="btn btn-gold">Découvrir la Collection</a>
+                <a href="#nouveautes" class="btn btn-outline">Nouveautés</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Explorer</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section id="collections" class="collections-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="gold-tag">Collections Exclusives</span>
+                <h2>L'Art de l'Élégance</h2>
+                <div class="title-divider"></div>
+            </div>
+            <div class="collections-grid">
+                <div class="collection-card reveal" data-filter="montres">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&q=80&w=800" alt="Montres Herry">
+                    </div>
+                    <div class="collection-overlay">
+                        <h3>Montres</h3>
+                        <p>Garde-temps d'exception</p>
+                        <span class="collection-link">Voir la collection <i class="fa-solid fa-arrow-right-long"></i></span>
+                    </div>
+                </div>
+                <div class="collection-card reveal" data-filter="bracelets">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=800" alt="Bracelets Herry">
+                    </div>
+                    <div class="collection-overlay">
+                        <h3>Bracelets</h3>
+                        <p>L'éclat au masculin et féminin</p>
+                        <span class="collection-link">Voir la collection <i class="fa-solid fa-arrow-right-long"></i></span>
+                    </div>
+                </div>
+                <div class="collection-card reveal" data-filter="colliers">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=800" alt="Colliers Herry">
+                    </div>
+                    <div class="collection-overlay">
+                        <h3>Colliers</h3>
+                        <p>Finesse et métaux précieux</p>
+                        <span class="collection-link">Voir la collection <i class="fa-solid fa-arrow-right-long"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bestsellers" class="bestsellers-section section-padding ivory-bg">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="gold-tag">Les Icônes</span>
+                <h2>Nos Pièces Maîtresses</h2>
+                <div class="title-divider"></div>
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-target="all">Tout voir</button>
+                    <button class="filter-tab" data-target="montres">Montres</button>
+                    <button class="filter-tab" data-target="bracelets">Bracelets</button>
+                    <button class="filter-tab" data-target="colliers">Colliers</button>
+                </div>
+            </div>
+
+            <div class="products-grid" id="products-grid">
+                </div>
+        </div>
+    </section>
+
+    <section class="why-section section-padding">
+        <div class="container">
+            <div class="why-grid">
+                <div class="why-item reveal">
+                    <i class="fa-solid fa-truck-fast why-icon"></i>
+                    <h3>Livraison 24/48H</h3>
+                    <p>Expédition sécurisée et gratuite partout au Maroc.</p>
+                </div>
+                <div class="why-item reveal">
+                    <i class="fa-solid fa-hand-holding-dollar why-icon"></i>
+                    <h3>Paiement à la Livraison</h3>
+                    <p>Commandez en toute confiance, payez à la réception.</p>
+                </div>
+                <div class="why-item reveal">
+                    <i class="fa-solid fa-gem why-icon"></i>
+                    <h3>Produits Premium</h3>
+                    <p>Matériaux certifiés, acier chirurgical 316L et dorures fines.</p>
+                </div>
+                <div class="why-item reveal">
+                    <i class="fa-solid fa-shield-halved why-icon"></i>
+                    <h3>Qualité Garantie</h3>
+                    <p>Chaque pièce est accompagnée d'une garantie internationale de 2 ans.</p>
+                </div>
+                <div class="why-item reveal">
+                    <i class="fa-solid fa-headset why-icon"></i>
+                    <h3>Service Client Réactif</h3>
+                    <p>Une conciergerie à votre écoute 7j/7 sur WhatsApp.</p>
+                </div>
+                <div class="why-item reveal">
+                    <i class="fa-solid fa-lock why-icon"></i>
+                    <h3>Achat Sécurisé</h3>
+                    <p>Protocoles de sécurité haut de gamme pour vos transactions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nouveautes" class="arrivals-section section-padding ivory-bg">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="gold-tag">Nouveautés</span>
+                <h2>La Nouvelle Collection</h2>
+                <div class="title-divider"></div>
+            </div>
+            <div class="slider-container">
+                <button class="slider-arrow prev-arrow" id="slide-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="slider-wrapper">
+                    <div class="slider-track" id="slider-track">
+                        </div>
+                </div>
+                <button class="slider-arrow next-arrow" id="slide-next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section section-padding">
+        <div class="container about-grid">
+            <div class="about-img reveal">
+                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=1000" alt="Herry Craftsmanship">
+            </div>
+            <div class="about-text reveal">
+                <span class="gold-tag">La Maison Herry</span>
+                <h2>Un Héritage d'Élégance Contemporaine</h2>
+                <div class="title-divider left-aligned"></div>
+                <p>Née d'une vision de marier le prestige de la haute horlogerie suisse à la sophistication de l'art de vivre marocain, la Maison HERRY crée des pièces d'exception pour les esthètes modernes.</p>
+                <p>Chaque montre et accessoire est conçu selon des standards rigoureux, alliant une précision technique sans faille à des designs intemporels. Notre mission est d'offrir l'excellence et le luxe absolu, accessibles directement à votre poignet.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Signature_of_Anatole_France.svg" alt="Signature" class="signature">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section section-padding ivory-bg">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="gold-tag">Avis de nos Membres</span>
+                <h2>Témoignages</h2>
+                <div class="title-divider"></div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testimonial-text">"La finition de la montre Herry Royal Chrono est tout simplement spectaculaire. Reçue à Casablanca en moins de 24h dans un écrin magnifique."</p>
+                    <h4 class="customer-name">Amine B.</h4>
+                    <span class="customer-location">Casablanca</span>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testimonial-text">"Le bracelet torsadé or jaune complète parfaitement mes tenues de soirée. Le service client sur WhatsApp est extrêmement courtois."</p>
+                    <h4 class="customer-name">Yasmine M.</h4>
+                    <span class="customer-location">Rabat</span>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testimonial-text">"Acheter une montre haut de gamme en paiement à la livraison offre une vraie tranquillité d'esprit. La qualité dépasse mes attentes."</p>
+                    <h4 class="customer-name">Karim T.</h4>
+                    <span class="customer-location">Marrakech</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="instagram-section">
+        <div class="insta-header text-center">
+            <p><i class="fa-brands fa-instagram"></i> Suivez @HerryWatch #HerryExcellence</p>
+        </div>
+        <div class="insta-grid">
+            <div class="insta-item"><img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&q=80&w=500" alt="Insta Herry"><div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div></div>
+            <div class="insta-item"><img src="https://images.unsplash.com/photo-1539874754764-5a96559165b0?auto=format&fit=crop&q=80&w=500" alt="Insta Herry"><div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div></div>
+            <div class="insta-item"><img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&q=80&w=500" alt="Insta Herry"><div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div></div>
+            <div class="insta-item"><img src="https://images.unsplash.com/photo-1517462964-21fdcec3f25b?auto=format&fit=crop&q=80&w=500" alt="Insta Herry"><div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div></div>
+            <div class="insta-item"><img src="https://images.unsplash.com/photo-1600857062241-98e5dba7f214?auto=format&fit=crop&q=80&w=500" alt="Insta Herry"><div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section section-padding">
+        <div class="container contact-container">
+            <div class="contact-info reveal">
+                <span class="gold-tag">Contact Spécialisé</span>
+                <h2>Votre Conciergerie</h2>
+                <div class="title-divider left-aligned"></div>
+                <p>Nos conseillers de la Maison Herry sont à votre disposition pour vous orienter dans vos choix ou suivre vos acquisitions.</p>
+                <div class="info-details">
+                    <div class="info-item"><i class="fa-solid fa-location-dot"></i> <span>Boulevard d'Anfa, Résidence Les Princes, Casablanca, Maroc</span></div>
+                    <div class="info-item"><i class="fa-solid fa-phone"></i> <span>+212 (0) 522 45 45 45</span></div>
+                    <div class="info-item"><i class="fa-solid fa-envelope"></i> <span>concierge@herrywatch.ma</span></div>
+                </div>
+            </div>
+            <div class="contact-form-wrapper reveal">
+                <form id="luxury-contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="nom">Nom Complet</label>
+                        <input type="text" id="nom" required placeholder="M. / Mme. Bourgeois">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse Email</label>
+                        <input type="email" id="email" required placeholder="votre@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">Numéro de Téléphone</label>
+                        <input type="tel" id="tel" required placeholder="+212 600 000000">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Votre Message</label>
+                        <textarea id="message" rows="4" required placeholder="Comment pouvons-nous vous assister ?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-gold full-width">Envoyer la Demande</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="luxury-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3 class="footer-logo">HERRY<span>.</span></h3>
+                <p>L'excellence de la haute horlogerie et des accessoires de prestige au Maroc.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <a href="#hero">Accueil</a>
+                <a href="#collections">Collections</a>
+                <a href="#nouveautes">Nouveautés</a>
+                <a href="#about">À Propos</a>
+            </div>
+            <div class="footer-links">
+                <h3>Informations</h3>
+                <a href="#">Livraison & Retours</a>
+                <a href="#">Conditions Générales</a>
+                <a href="#">Garantie Authentique</a>
+                <a href="#">Guide des Tailles</a>
+            </div>
+            <div class="footer-links">
+                <h3>Contact</h3>
+                <p><i class="fa-solid fa-envelope"></i> contact@herrywatch.ma</p>
+                <p><i class="fa-solid fa-phone"></i> +212 661 234567</p>
+                <p><i class="fa-solid fa-clock"></i> Lun - Sam : 09:00 - 19:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 HERRY WATCH. Conçu pour l'Excellence. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-sidebar-header">
+            <h3>Votre Panier</h3>
+            <i class="fa-solid fa-xmark close-cart" id="cart-close-btn"></i>
+        </div>
+        
+        <div id="cart-step-1" class="cart-step">
+            <div class="cart-items-container" id="cart-items-container">
+                <p class="empty-cart-msg">Votre panier est vide.</p>
+            </div>
+            <div class="cart-sidebar-footer">
+                <div class="cart-total-row">
+                    <span>Total:</span>
+                    <span id="cart-total-price">0 MAD</span>
+                </div>
+                <button class="btn btn-gold full-width" id="checkout-btn">Passer la Commande</button>
+            </div>
+        </div>
+
+        <div id="cart-step-2" class="cart-step" style="display: none;">
+            <div class="checkout-form-container">
+                <p class="checkout-form-subtitle">Complétez vos détails pour finaliser l'expédition</p>
+                <form id="shipping-checkout-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="shipping-name">Nom Complet *</label>
+                        <input type="text" id="shipping-name" required placeholder="Ex: Mohamed Alami">
+                    </div>
+                    <div class="form-group">
+                        <label for="shipping-phone">Numéro de Téléphone *</label>
+                        <input type="tel" id="shipping-phone" required placeholder="Ex: 0661234567">
+                    </div>
+                    <div class="form-group">
+                        <label for="shipping-city">Ville *</label>
+                        <input type="text" id="shipping-city" required placeholder="Ex: Casablanca, Rabat, Marrakech...">
+                    </div>
+                    <div class="form-group">
+                        <label for="shipping-address">Adresse de Livraison *</label>
+                        <textarea id="shipping-address" rows="3" required placeholder="Ex: N° 42, Rue Des Fleurs..."></textarea>
+                    </div>
+                    
+                    <div class="cart-total-row" style="margin-top: 15px; margin-bottom: 15px;">
+                        <span>Total à payer :</span>
+                        <span id="checkout-final-price" style="color: var(--luxury-gold); font-weight: 600;">0 MAD</span>
+                    </div>
+
+                    <button type="submit" class="btn btn-gold full-width">Confirmer ma Commande</button>
+                    <button type="button" class="btn btn-outline full-width" id="back-to-cart-btn" style="color: var(--deep-black); border-color: var(--light-gray); margin-left: 0; margin-top: 10px; background: transparent;">Retour au panier</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <div class="quickview-modal" id="quickview-modal">
+        <div class="qv-content">
+            <i class="fa-solid fa-xmark close-modal" id="close-modal-btn"></i>
+            <div class="qv-grid" id="qv-grid-content">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
